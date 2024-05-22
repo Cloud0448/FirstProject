@@ -6,3 +6,4 @@ def SayWhat(input_str):
     
 SayWhat('Hii') 
 
+print('안녕' + '하세요')
