@@ -15,3 +15,9 @@ def solution2() :
     answer = a*3
     print(answer) 
 
+
+# 문자열 한글자씩 한줄에 출력하기
+def solution3(str) :
+    for s in str:
+        print(s)
+
