@@ -13,4 +13,5 @@ def solution1():
 
 def solution2() : 
     answer = a*3
-    print(answer)
+    print(answer) 
+
