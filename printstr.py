@@ -1,0 +1,45 @@
+a = 'string'
+   
+def solution1():
+
+    answer =''
+    n = 1
+    
+    while n <= 3:
+        answer = answer + a
+        n = n + 1
+    print(answer)
+    
+
+def solution2() : 
+    answer = a*3
+    print(answer) 
+
+
+# 문자열 한글자씩 한줄에 출력하기
+def solution3(str) :
+    for s in str:
+        print(s)
+
+# 문자열 두개를 한글자씩 번갈아가면서 출력하기
+def solution4(str1, str2) :
+    answer = ''
+    for i in range(len(str1)) :
+        answer = answer+(str1[i]+str2[i])
+    print(answer)
+
+# 문자열의 앞의 n글자를 출력하기
+def solution5() :
+    my_string = 'hello world'
+    n = 3
+    
+    print(my_string[:n])
+
+
+# 문자열을 대문자로 바꿔서 출력하기
+def solution6() :
+    myString = 'aBcDefgH'
+    
+    print(myString.upper())
+    
+

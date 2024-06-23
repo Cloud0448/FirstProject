@@ -51,8 +51,32 @@ def sol7(num_list):
     return num_list
     
 
+# 문자열을 공백 기준으로 잘라서 배열에 담기
+def sol8(my_string):
+    answer = my_string.split(' ')
+    return answer
 
-num_list = [2, 1, 6]
-sol7(num_list)
 
 
+# 특정 문자열만 대문자로 바꾸기
+
+def sol9() :
+    my_string = 'programmers'
+    alp = 'p'
+    print(my_string.replace(alp, alp.upper()))   
+ 
+
+
+# start_num부터 end_num까지의 숫자를 차례로 담은 리스트를 배열에 담아
+def sol10() :
+    start_num = 3
+    end_num = 10
+    
+    answer = []
+    
+    for i in range(start_num, end_num+1):
+        answer.append(i)
+    
+    print(answer)
+    
+sol10()
