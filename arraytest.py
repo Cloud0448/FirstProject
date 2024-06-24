@@ -55,15 +55,6 @@ def sol7(num_list):
 def sol8(my_string):
     answer = my_string.split(' ')
     return answer
-
-
-
-# 특정 문자열만 대문자로 바꾸기
-
-def sol9() :
-    my_string = 'programmers'
-    alp = 'p'
-    print(my_string.replace(alp, alp.upper()))   
  
 
 
