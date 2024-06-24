@@ -43,3 +43,9 @@ def solution6() :
     print(myString.upper())
     
 
+# 특정 문자열만 대문자로 바꾸기
+
+def sol9() :
+    my_string = 'programmers'
+    alp = 'p'
+    print(my_string.replace(alp, alp.upper()))   
