@@ -46,8 +46,20 @@ def solution6() :
     
 
 # 특정 문자열만 대문자로 바꾸기
-
 def sol9() :
     my_string = 'programmers'
     alp = 'p'
     print(my_string.replace(alp, alp.upper()))   
+
+
+# 문자열인 숫자의 각자리 합을 9로 나눈 나머지 구하기
+def sol10():
+    numbers = '123'
+    answer = 0
+
+    for num in numbers :
+        answer += int(num)
+
+    return answer % 9
+
+
