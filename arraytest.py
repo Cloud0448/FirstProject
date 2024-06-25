@@ -37,7 +37,6 @@ def sol6() :
     print(arr_str)
 
 
-
 # 정수 리스트 num_list가 주어질 때, 
 # 마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을
 # 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가하여 return
@@ -55,7 +54,6 @@ def sol7(num_list):
 def sol8(my_string):
     answer = my_string.split(' ')
     return answer
- 
 
 
 # start_num부터 end_num까지의 숫자를 차례로 담은 리스트를 배열에 담아
@@ -70,4 +68,16 @@ def sol10() :
     
     print(answer)
     
-sol10()
+
+# 값이 n보다 커질 때까지 배열 요소들을 더하기
+def solution(numbers, n):
+    answer = 0
+
+    for i in numbers :
+        if answer > n :
+            return answer
+        else :
+            answer += i
+
+    return answer
+    
