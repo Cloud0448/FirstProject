@@ -80,4 +80,31 @@ def solution(numbers, n):
             answer += i
 
     return answer
-    
+
+
+# n 이하의 홀수가 오름차순으로 담긴 배열 구하기
+def sol0626_1(n):
+    answer = [i for i in range(1, n+1, 2)]
+    print(answer)
+
+def sol0626_2(n):
+    answer = list(range(1, n+1, 2))
+    print(answer)
+
+
+# n 이하의 짝수를 모두 더한 값을 구하기
+def sol0626_3(n):
+    answer = sum(list(range(0, n+1, 2)))
+    print(answer)
+
+
+# n 값이 배열 안에 존재하면 1, 존재하지 않으면 0 리턴하기
+def sol0626_4(num_list, n):
+    if n in num_list:
+        return 1
+    else:
+        return 0
+
+
+
+
