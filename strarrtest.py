@@ -11,7 +11,7 @@ def sol0626_5(my_string, s, e):
     print(answer)
 
 # 다른 사람 풀이 참고
-def sol0626_5(my_string, s, e):
+def sol0626_6(my_string, s, e):
   
     a = my_string[:s]
     b = my_string[s:e+1][::-1]
