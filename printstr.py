@@ -46,6 +46,24 @@ def sol7(my_string, alp) :
     print(my_string.replace(alp, alp.upper()))   
 
 
+# 문자열의 글자를 대소문자 바꿔서 출력하기
+def sol1():
+    str = 'aBcDeFg'
+    answer = ''
+
+    for s in str :
+        if s.islower() :
+            answer += s.upper()
+        else :
+            answer += s.lower()
+    print(answer)
+    
+## 하지만 swapcase를 쓰면 한줄로 끝낼 수 있다
+def sol2():
+    str = 'aBcDeFg'
+    print(str.swapcase())
+
+
 # 문자열인 숫자의 각자리 합을 9로 나눈 나머지 구하기
 def sol8(numbers):
     numbers = ''
