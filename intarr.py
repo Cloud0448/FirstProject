@@ -14,3 +14,20 @@ def sol0626_7(n):
             answer += a
             
     return answer
+
+
+# 배열 안의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return
+def solution(num_list):
+    a = ''
+    b = ''
+        
+    for num in num_list :
+        if num % 2 == 1 :
+            a += str(num)
+        if num % 2 == 0 :
+            b += str(num)
+
+    return int(a)+int(b)
+
+
+        
