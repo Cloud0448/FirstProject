@@ -55,4 +55,17 @@ def solution(my_string, is_prefix):
 
 
 
+#두 정수 q, r과 문자열 code가 주어질 때, code의 각 인덱스를 q로 나누었을 때 나머지가 r인 위치의 문자를 앞에서부터 순서대로 이어 붙인 문자열을 return
+def solution(q, r, code):
+    arr = [i for i in range(0,len(code))]
+    answer = ''
 
+    for i in arr :
+        if i % q == r:
+            answer += code[i]
+    
+    return answer
+
+## 그런데 다른 사람의 풀이를 보니 이렇게도 된다...?! WHy..
+def solution(q, r, code):
+    return code[r::q]
