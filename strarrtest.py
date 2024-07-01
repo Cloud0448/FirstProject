@@ -29,4 +29,30 @@ def sol0626_6(my_string, s, e):
     print(answer)
 
 
+#문자열 뒤의 n글자 return
+def solution(my_string, n):
+    answer = my_string[-n:]
+    return answer
+
+
+# my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 
+def solution(my_string, index_list):
+    answer = ''
+    
+    for i in index_list :
+        answer += my_string[i]
+    
+    return answer
+
+
+# is_prefix가 my_string의 접두사라면 1, 아니면 0을 return
+def solution(my_string, is_prefix):
+    if my_string[:len(is_prefix)] == is_prefix :
+        return 1
+    else:
+        return 0  
+## startswith 이라는 함수도 있음! return int(my_string.startswith(is_prefix)) 접미사는 endswith.
+
+
+
 
