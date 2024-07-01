@@ -13,3 +13,11 @@ def solution3_1():
     if a % 2 == 0 :
         result = 'Even'
     print("계산 결과: {0}".format(result))
+
+    
+# flag가 true면 a+b를, false면 a-b를 return
+def solution(a, b, flag):
+    if flag:
+        return a+b
+    else:
+        return a-b
