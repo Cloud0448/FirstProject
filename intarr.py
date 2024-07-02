@@ -30,4 +30,16 @@ def solution(num_list):
     return int(a)+int(b)
 
 
+#  정수 리스트에서 홀수 번째 원소들의 합과 짝수 번째 원소들의 합 중 큰 값을 return
+  def solution(num_list):
+    odd = sum(num_list[0::2])
+    even = sum(num_list[1::2])
+    return max(odd, even)      
+
+
+# 정수 start_num에서 end_num까지 1씩 감소하는 수들을 차례로 리스트에 담기
+def solution(start_num, end_num):
+    answer = [i for i in range(end_num, start_num+1)]
+    return answer[::-1]
+
         
