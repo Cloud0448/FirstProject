@@ -106,5 +106,14 @@ def sol0626_4(num_list, n):
         return 0
 
 
+# arr의 원소 중 delete_list의 원소를 모두 삭제하고 남은 원소들은 기존의 arr에 있던 순서를 유지한 배열을 return
+def solution(arr, delete_list):
+    answer = []
+    
+    for i in arr :
+        if i not in delete_list:
+            answer.append(i)
+    
+    return answer
 
 
