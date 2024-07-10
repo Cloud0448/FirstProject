@@ -81,3 +81,11 @@ def solution(my_string, indices):
     return answer
 
 
+# 문자열 안에서 중복된 글자들은 빼고 중복되지 않는 글자들만 남기기
+def solution(my_string):
+    answer = ''
+    for i in my_string:
+        if i not in answer:
+            answer+=i
+    return answer
+# >dict로 쓰는 방법도 있다는데?!
