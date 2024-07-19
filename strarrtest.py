@@ -89,3 +89,19 @@ def solution(my_string):
             answer+=i
     return answer
 # >dict로 쓰는 방법도 있다는데?!
+
+
+# myString을 문자 "x"를 기준으로 나눴을 때 나눠진 문자열 각각의 길이를 순서대로 저장한 배열을 return
+def solution(myString):
+    answer = []
+    arr = myString.split("x")
+    
+    for i in range(0,len(arr)):
+        answer.append(len(arr[i]))
+
+    return answer
+
+# > 더 깔끔하게 하면
+def solution(myString):
+    return [len(w) for w in myString.split('x')]
+
